@@ -1,11 +1,14 @@
-from bottle import route, run, template
+from bottle import post, request, HTTPError, run
+import json
+
 import config
 
 
-@route('/')
+@post('/')
 def index():
-	test = {'a': 123, 'b': 456}
-	return test
+	if request.json:
+		key = request.json['key']
+		print(key)
 
 
-run(host='localhost', port=8000, reloader=True, debug=config.DEBUG)
+run(host='localhost', port=8000, reloader=True, debug=config.DEBUG, interval=0.1)
