@@ -24,7 +24,7 @@ def getkey():
 
 		with open('keys.json') as file:
 			keys = json.load(file)
-		return keys[uuid]
+		return keys[uuid]['key']
 
 
 run(host='localhost', port=8000, reloader=True, debug=config.DEBUG, interval=0.1)
