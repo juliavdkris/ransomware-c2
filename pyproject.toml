@@ -2,7 +2,7 @@
 name = "ransomware-c2"
 version = "0.1.0"
 description = "C2 server for the FileYeeter 3000 PoC ransomware"
-authors = ["Sam van der Kris <samvdkris@gmail.com>"]
+authors = ["Julia van der Kris <julia@juuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuulia.dev>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
